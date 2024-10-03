@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0.008075471}
-  m_LocalScale: {x: 1.0099998, y: 2.7124915, z: 0.17768814}
+  m_LocalScale: {x: 1.24, y: 2.7124915, z: 0.17768814}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2272037689478604307}
@@ -109,14 +109,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3872120401582000252}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.57, z: 0}
-  m_LocalScale: {x: 3.54, y: 5.486987, z: 30.879871}
-  m_ConstrainProportionsScale: 1
+  m_LocalRotation: {x: -0.50192827, y: -0.50192845, z: 0.49806413, w: 0.49806416}
+  m_LocalPosition: {x: -0.016578674, y: 0.57, z: -0.016712427}
+  m_LocalScale: {x: 2.78, y: 3.15, z: 24.250296}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1721116753078437061}
   m_Father: {fileID: 5653930615422897483}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.443, z: 90}
 --- !u!33 &8395106885334178495
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 8760668891558975246}
   m_Layer: 0
   m_Name: PickAxe
-  m_TagString: Untagged
+  m_TagString: Pick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
