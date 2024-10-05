@@ -12,6 +12,8 @@ TagManager:
   - Train
   - Pick
   - Axe
+  - Wood
+  - Stone
   layers:
   - Default
   - TransparentFX

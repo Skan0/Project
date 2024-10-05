@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*
@@ -13,25 +15,36 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Transform HoldingTrans;
     public Animator anim;
-    public float moveSpeed = 5f;       // 이동 속도
-    public float dashSpeed = 10f;      // 대쉬 속도
-    public float rotationSpeed = 5f;   // 회전 속도
-    public float dashCooldown = 2f;    // 대쉬 쿨타임
-    public GameObject Axe;
-    public GameObject Pick;
+    
+    public float moveSpeed = 5f;        // 이동 속도
+    public float dashSpeed = 150f;      // 대쉬 속도
+    public float rotationSpeed = 5f;    // 회전 속도
+    public float dashCooldown = 2f;     // 대쉬 쿨타임
 
+    private GameObject nearItem;
+
+    private float lastDashTime = -2f;   // 마지막 대쉬 시간 초기화
     private float X, Y;
-    private bool holding = false;      // 손에 물건을 들고 있는지 여부
-    private Vector3 lastMoveDir;       // 마지막 이동 방향
-    private float lastDashTime = -2f;  // 마지막 대쉬 시간 초기화
-
+    private string[] tagsToCheck = { "Axe", "Pick","Wood","Stone"}; // 손에 들 수 있는 물건들의 태그 목록
+    private bool closeToStuff = false;  // 물건의 collider에 접촉중인가
+    private string holdingstuff =null;    // 들고있는 물건의 이름으로 행동제어
+    private Vector3 lastMoveDir;        // 마지막 이동 방향
+    
+    
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
     void Update()
+    {
+        Movement();
+        Dash();
+        Interaction();
+    }
+    void Movement()
     {
         X = Input.GetAxis("Horizontal");
         Y = Input.GetAxis("Vertical");
@@ -53,30 +66,7 @@ public class Player : MonoBehaviour
         // 이동 처리
         transform.Translate(moveDir * moveSpeed * Time.deltaTime, Space.World);
 
-        // 대쉬 입력 처리 (쿨타임 적용)
-        if ((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift)) && Time.time > lastDashTime + dashCooldown)
-        {
-            Vector3 dashDir = new Vector3(-lastMoveDir.x, 0f, -lastMoveDir.z).normalized;
-            transform.Translate(dashDir * dashSpeed * Time.deltaTime, Space.World);
-
-            lastDashTime = Time.time; // 대쉬한 시간 기록
-        }
-
-        // 물건 들고/내리기 키 입력 처리
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
-        {
-            if (!holding)
-            {
-                
-                holding = true;
-            }
-            else
-            {
-                
-                holding = false;
-            }
-        }
-
+       
         // 플레이어가 움직일 때 회전 처리
         if (X != 0f || Y != 0f)
         {
@@ -85,13 +75,83 @@ public class Player : MonoBehaviour
             transform.rotation = targetRotation;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    void Dash()
     {
-        if (other.CompareTag("Axe"))
+        // 대쉬 입력 처리 (쿨타임 적용)
+        if ((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift)) && Time.time > lastDashTime + dashCooldown)
         {
-            other.transform.SetParent(transform);
-        }
+            //Debug.Log("Dash");
+            Vector3 dashDir = new Vector3(lastMoveDir.x, 0f, lastMoveDir.z).normalized;
+            transform.Translate(dashDir * dashSpeed * Time.deltaTime, Space.World);
 
+            lastDashTime = Time.time; // 대쉬한 시간 기록
+        }
+    }
+    void Interaction()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
+        {
+            if (nearItem != null)//가까운데 아이템이 있다.
+            {
+                if (holdingstuff == null)//들고있는 물건이 없는가 확인
+                {
+                    PickUpItem();
+                }
+                else
+                {
+                    SwapItem();
+                    PickUpItem();
+                }
+            }
+        }
+    }
+    void SwapItem()
+    {
+        GameObject temp = HoldingTrans.GetChild(0).gameObject;
+        Transform Parent = nearItem.transform.parent;
+        temp.transform.SetParent(Parent);
+        temp.transform.position = nearItem.transform.position;
+        temp.transform.rotation=Quaternion.identity;
+        temp.transform.localScale = Vector3.one;
+
+        holdingstuff = nearItem.tag;
+    }
+    void PickUpItem()
+    {
+        // 부모를 변경 (HoldingTrans로)
+        nearItem.transform.SetParent(HoldingTrans);
+
+        // 부모 오브젝트의 로컬 좌표를 기준으로 위치, 회전, 스케일을 초기화
+        nearItem.transform.localPosition = Vector3.zero;
+        nearItem.transform.localRotation = Quaternion.identity;
+        nearItem.transform.localScale = Vector3.one;  // 스케일 초기화 (1, 1, 1)
+
+        holdingstuff = nearItem.tag;
     }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        foreach (string tag in tagsToCheck)
+        {
+            if (other.CompareTag(tag))
+            {
+                closeToStuff = true;
+                nearItem = other.gameObject;
+                break;  
+            }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        foreach (string tag in tagsToCheck)
+        {
+            if (other.CompareTag(tag))
+            {
+                closeToStuff = false;
+                nearItem = null;
+                break;
+            }
+        }
+    }
 }
