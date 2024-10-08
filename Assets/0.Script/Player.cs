@@ -11,6 +11,9 @@ using UnityEngine;
  * space키와 right_ctrl 아이템 들고 놓기
  * Lshift와 Rshift 대쉬 쿨타임 있는
  * 자원 캐기, 물건 내려놓기, 걷기, 달리기 등의 애니매이션
+ * 
+ * 설계에 문제가 있었다. 물건 자체의 콜라이더와 충돌을 체크할 게 아니라 타일맵의 box와 충돌 체크를 하고 key를 눌렀을 때 검사해서 자식 오브젝트
+ * 다 갈아엎어야함
  */
 
 public class Player : MonoBehaviour
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
     private float lastDashTime = -2f;   // 마지막 대쉬 시간 초기화
     private float X, Y;
     private string[] tagsToCheck = { "Axe", "Pick","Wood","Stone"}; // 손에 들 수 있는 물건들의 태그 목록
+    private string[] tagsToBreak = { "Tree", "Rock" };
     private bool closeToStuff = false;  // 물건의 collider에 접촉중인가
     private string holdingstuff =null;    // 들고있는 물건의 이름으로 행동제어
     private Vector3 lastMoveDir;        // 마지막 이동 방향
