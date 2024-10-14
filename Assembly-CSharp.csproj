@@ -60,10 +60,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\0.Script\Tree1.cs" />
     <Compile Include="Assets\0.Script\Camera.cs" />
     <Compile Include="Assets\0.Script\Player.cs" />
     <Compile Include="Assets\0.Script\EndPoint.cs" />
     <Compile Include="Assets\0.Script\GameManager.cs" />
+    <Compile Include="Assets\0.Script\Create_Rail.cs" />
+    <Compile Include="Assets\0.Script\Stone.cs" />
     <Compile Include="Assets\0.Script\Train.cs" />
   </ItemGroup>
   <ItemGroup>

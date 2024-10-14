@@ -114,40 +114,43 @@ public class TrainMovement : MonoBehaviour
 
     void Update()
     {
-        // 우회전 중일 때 처리
-        if (isTurningRight)
+        if (GameManager.Instance.State == GameState.Play)
         {
-            // 부드럽게 우회전
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed*Time.deltaTime);
-
-            // 회전 완료시 상태 초기화
-            if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+            // 우회전 중일 때 처리
+            if (isTurningRight)
             {
-                isTurningRight = false;
+                // 부드럽게 우회전
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+                // 회전 완료시 상태 초기화
+                if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+                {
+                    isTurningRight = false;
+                }
+
+                // 회전 중에도 전진
+                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
             }
-
-            // 회전 중에도 전진
-            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-        }
-        // 좌회전 중일 때 처리
-        else if (isTurningLeft)
-        {
-            // 부드럽게 좌회전
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-            // 회전 완료시 상태 초기화
-            if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+            // 좌회전 중일 때 처리
+            else if (isTurningLeft)
             {
-                isTurningLeft = false;
-            }
+                // 부드럽게 좌회전
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-            // 회전 중에도 전진
-            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
-        }
-        else
-        {
-            // 좌우회전 중이 아닐 때는 직진
-            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+                // 회전 완료시 상태 초기화
+                if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+                {
+                    isTurningLeft = false;
+                }
+
+                // 회전 중에도 전진
+                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                // 좌우회전 중이 아닐 때는 직진
+                transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+            }
         }
     }
 

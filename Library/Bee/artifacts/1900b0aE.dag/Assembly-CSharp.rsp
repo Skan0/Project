@@ -360,10 +360,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/0.Script/Camera.cs"
+"Assets/0.Script/Create_Rail.cs"
 "Assets/0.Script/EndPoint.cs"
 "Assets/0.Script/GameManager.cs"
 "Assets/0.Script/Player.cs"
+"Assets/0.Script/Stone.cs"
 "Assets/0.Script/Train.cs"
+"Assets/0.Script/Tree1.cs"
 -langversion:9.0
 /deterministic
 /optimize+

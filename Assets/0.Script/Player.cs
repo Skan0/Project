@@ -18,27 +18,35 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Transform HoldingTrans;
-    public Animator anim;
+    public static Player instance;
+
+    public Transform HoldingTrans;      //아이템을 들고 있을 위치
+    public Animator anim;               
     
     public float moveSpeed = 5f;        // 이동 속도
     public float dashSpeed = 800f;      // 대쉬 속도
     public float rotationSpeed = 5f;    // 회전 속도
     public float dashCooldown = 2f;     // 대쉬 쿨타임
 
-    private Transform nearItemParent;
-    private GameObject nearItem;
+    private Transform nearItemParent;   //Ground아래 collider
+    private GameObject nearItem;        //근처의 아이템을 잠시 담아둘 공간
 
-    private float lastDashTime = -2f;   // 마지막 대쉬 시간 초기화
+    private float lastDashTime = -2f;                   // 마지막 대쉬 시간 초기화
     private float X, Y;
     private string[] tagsToCheck = { "Axe", "Pick","Wood","Stone"}; // 손에 들 수 있는 물건들의 태그 목록
-    private string[] tagsToBreak = { "Tree", "Rock" };
-    //이건 스스로 점차 부서지면서 애니메이션이 켜져야 할거 같으니까 다른데서 만들자.
-    private bool closeToStuff = false;  // 물건의 collider에 접촉중인가
-    private string holdingstuff =null;    // 들고있는 물건의 이름으로 행동제어
-    private Vector3 lastMoveDir;        // 마지막 이동 방향
-    
-    
+    private string[] tagsToBreak = { "Tree", "Rock" };  //이건 스스로 점차 부서지면서 애니메이션이 켜져야 할거 같으니까 다른데서 만들자.
+    private bool closeToStuff = false;                  // 물건의 collider에 접촉중인가
+    private string holdingstuff =null;                  // 들고있는 물건의 이름으로 행동제어
+    private Vector3 lastMoveDir;                        // 마지막 이동 방향
+
+    private void Awake()
+    {
+        if (this == null)
+        {
+            instance = this;
+        }
+       
+    }
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -46,15 +54,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
         Movement();
         Dash();
         Interaction();
     }
-    void Animate()
-    {
-        
-    }   
+    
+    // 플레이어 움직임 
     void Movement()
     {
         X = Input.GetAxis("Horizontal");
@@ -76,7 +81,6 @@ public class Player : MonoBehaviour
 
         // 이동 처리
         transform.Translate(moveDir * moveSpeed * Time.deltaTime, Space.World);
-
        
         // 플레이어가 움직일 때 회전 처리
         if (X != 0f || Y != 0f)
@@ -86,6 +90,8 @@ public class Player : MonoBehaviour
             transform.rotation = targetRotation;
         }
     }
+
+    // 앞으로 약간 빠르게 이동시켜줌
     void Dash()
     {
         // 대쉬 입력 처리 (쿨타임 적용)
@@ -98,6 +104,8 @@ public class Player : MonoBehaviour
             lastDashTime = Time.time; // 대쉬한 시간 기록
         }
     }
+
+    // 아이템과 관련된 상호작용을 담당하는 함수
     void Interaction()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
@@ -115,7 +123,6 @@ public class Player : MonoBehaviour
                     SwapItem();
                 }
             }
-            //가까운데 아이템이 없다.
             else if (holdingstuff != null)
             {
                 Debug.Log(holdingstuff);
@@ -124,6 +131,8 @@ public class Player : MonoBehaviour
             }
         }
     }
+    
+    // 바닥이 비어있을 때 부를 함수
     void PutDownItem()
     {
         GameObject temp = HoldingTrans.GetChild(0).gameObject;
@@ -134,6 +143,7 @@ public class Player : MonoBehaviour
         nearItemParent = null;
         holdingstuff = null;
     }
+
     // 손에 있는 아이템과 바닥에 있는 아이템을 바꿔준다.
     void SwapItem()
     {
@@ -145,6 +155,8 @@ public class Player : MonoBehaviour
         temp.transform.localScale = Vector3.one;
         PickUpItem();
     }
+
+    // 손이 비어있을 때 아이템 들기
     void PickUpItem()
     {
         // 부모를 변경 (HoldingTrans로)
@@ -156,14 +168,15 @@ public class Player : MonoBehaviour
         nearItem.transform.localScale = Vector3.one;  // 스케일 초기화 (1, 1, 1)
 
         holdingstuff = nearItem.tag;
+        closeToStuff = false;
+        nearItem = null;
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.childCount == 0)
         {
-            Debug.Log("nearItemParent");
+            //Debug.Log(other.transform.position);
             nearItemParent = other.transform;
             return;
         }
@@ -181,12 +194,17 @@ public class Player : MonoBehaviour
                 return;  // 원하는 아이템을 찾으면 루프 종료
             }
         }
+        foreach (string tag in tagsToBreak)
+        {
+            if (child.CompareTag(tag))
+            {
+                anim.SetBool("Working", true);
+            }
+        }
     }
-
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.childCount == 0)
-            return;  
+        if (other.transform.childCount == 0)return;  
        
         Transform child = other.transform.GetChild(0);
         foreach (string tag in tagsToCheck)
@@ -197,6 +215,13 @@ public class Player : MonoBehaviour
                 closeToStuff = false;
                 nearItem = null;
                 break;
+            }
+        }
+        foreach (string tag in tagsToBreak)
+        {
+            if (child.CompareTag(tag))
+            {
+                anim.SetBool("Working", false);
             }
         }
     }

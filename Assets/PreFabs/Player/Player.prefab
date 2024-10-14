@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 1991033355148840574}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   HoldingTrans: {fileID: 1351738374368235771}
   anim: {fileID: 1991033355148840574}
   moveSpeed: 5
-  dashSpeed: 200
+  dashSpeed: 800
   rotationSpeed: 5
   dashCooldown: 2
 --- !u!95 &1991033355148840574
