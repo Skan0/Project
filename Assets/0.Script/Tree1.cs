@@ -17,6 +17,7 @@ public class Tree1 : MonoBehaviour
         {
             GameObject wood = Instantiate(Wood, transform.position, transform.rotation);
             wood.transform.SetParent(parent);
+            Player.instance.anim.SetBool("Working", false);
             Destroy(gameObject);
         }
     }

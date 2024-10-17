@@ -17,6 +17,7 @@ public class Stone : MonoBehaviour
         {
             GameObject rock = Instantiate(Rock, transform.position, transform.rotation);
             rock.transform.SetParent(parent);
+            Player.instance.anim.SetBool("Working", false);
             Destroy(gameObject);
         }        
     }

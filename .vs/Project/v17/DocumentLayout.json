@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\onedrive\\desktop\\project\\assets\\0.script\\create_rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\create_rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\createrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\createrail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\onedrive\\desktop\\project\\assets\\0.script\\tree1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\tree1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\stone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\stone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\tree1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\tree1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +38,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create_Rail.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Create_Rail.cs",
-              "RelativeDocumentMoniker": "Assets\\0.Script\\Create_Rail.cs",
-              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Create_Rail.cs",
-              "RelativeToolTip": "Assets\\0.Script\\Create_Rail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T07:27:02.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Tree1.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Tree1.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Tree1.cs",
               "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Tree1.cs",
               "RelativeToolTip": "Assets\\0.Script\\Tree1.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:18:39.077Z"
+              "WhenOpened": "2024-10-17T15:13:40.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Stone.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Stone.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Stone.cs",
               "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Stone.cs",
               "RelativeToolTip": "Assets\\0.Script\\Stone.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwBIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:09:05.454Z"
+              "WhenOpened": "2024-10-16T10:59:20.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Train.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Train.cs",
-              "RelativeDocumentMoniker": "Assets\\0.Script\\Train.cs",
-              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Train.cs",
-              "RelativeToolTip": "Assets\\0.Script\\Train.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T13:56:22.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Camera.cs",
-              "RelativeDocumentMoniker": "Assets\\0.Script\\Camera.cs",
-              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Camera.cs",
-              "RelativeToolTip": "Assets\\0.Script\\Camera.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T08:57:46.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Player.cs",
               "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player.cs",
               "RelativeToolTip": "Assets\\0.Script\\Player.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwDcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T05:48:41.71Z"
+              "WhenOpened": "2024-09-25T05:48:41.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateRail.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\CreateRail.cs",
+              "RelativeDocumentMoniker": "Assets\\0.Script\\CreateRail.cs",
+              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\CreateRail.cs",
+              "RelativeToolTip": "Assets\\0.Script\\CreateRail.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwC8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:12:13.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Train.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Train.cs",
+              "RelativeDocumentMoniker": "Assets\\0.Script\\Train.cs",
+              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Train.cs",
+              "RelativeToolTip": "Assets\\0.Script\\Train.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:56:22.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Camera.cs",
+              "RelativeDocumentMoniker": "Assets\\0.Script\\Camera.cs",
+              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Camera.cs",
+              "RelativeToolTip": "Assets\\0.Script\\Camera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T08:57:46.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\GameManager.cs",
               "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\GameManager.cs",
               "RelativeToolTip": "Assets\\0.Script\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T05:32:04.895Z"
+              "WhenOpened": "2024-09-25T05:32:04.895Z",
+              "EditorCaption": ""
             }
           ]
         }

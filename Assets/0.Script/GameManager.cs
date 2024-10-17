@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public enum GameState
@@ -10,11 +11,12 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
-
     public static GameManager Instance;
 
     public GameState State;
-
+    public GameObject[] Player;
+    public Transform[] PlayerSpawnPoint;
+    public int PlayerCount;
     void Awake()
     {
         // GameManager 인스턴스가 하나만 존재하도록 설정
@@ -31,6 +33,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        for (int i = 0; i < PlayerCount; i++) {
+            Instantiate(Player[i], PlayerSpawnPoint[i]);
+        }
         StartCoroutine(startGame(5f));
     }
     IEnumerator startGame(float delay)

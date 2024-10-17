@@ -64,8 +64,8 @@
     <Compile Include="Assets\0.Script\Camera.cs" />
     <Compile Include="Assets\0.Script\Player.cs" />
     <Compile Include="Assets\0.Script\EndPoint.cs" />
+    <Compile Include="Assets\0.Script\CreateRail.cs" />
     <Compile Include="Assets\0.Script\GameManager.cs" />
-    <Compile Include="Assets\0.Script\Create_Rail.cs" />
     <Compile Include="Assets\0.Script\Stone.cs" />
     <Compile Include="Assets\0.Script\Train.cs" />
   </ItemGroup>

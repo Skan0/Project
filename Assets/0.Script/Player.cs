@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     public float dashSpeed = 800f;      // 대쉬 속도
     public float rotationSpeed = 5f;    // 회전 속도
     public float dashCooldown = 2f;     // 대쉬 쿨타임
+    public string holdingstuff = null;                  // 들고있는 물건의 이름으로 행동제어
 
     private Transform nearItemParent;   //Ground아래 collider
     private GameObject nearItem;        //근처의 아이템을 잠시 담아둘 공간
@@ -36,20 +37,24 @@ public class Player : MonoBehaviour
     private string[] tagsToCheck = { "Axe", "Pick","Wood","Stone"}; // 손에 들 수 있는 물건들의 태그 목록
     private string[] tagsToBreak = { "Tree", "Rock" };  //이건 스스로 점차 부서지면서 애니메이션이 켜져야 할거 같으니까 다른데서 만들자.
     private bool closeToStuff = false;                  // 물건의 collider에 접촉중인가
-    private string holdingstuff =null;                  // 들고있는 물건의 이름으로 행동제어
     private Vector3 lastMoveDir;                        // 마지막 이동 방향
 
     private void Awake()
     {
-        if (this == null)
+        if (instance == null)
         {
             instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
         }
        
     }
     void Start()
     {
         anim = GetComponent<Animator>();
+        holdingstuff = null;
     }
 
     void Update()
@@ -127,20 +132,19 @@ public class Player : MonoBehaviour
             {
                 Debug.Log(holdingstuff);
                 //현재 충돌중인 콜라이더의 자식오브젝트로 놔줘야 함
-                PutDownItem();
+                PutDownItem(nearItemParent);
+                nearItemParent = null;
             }
         }
     }
-    
     // 바닥이 비어있을 때 부를 함수
-    void PutDownItem()
+    public void PutDownItem(Transform nearItemParent)
     {
         GameObject temp = HoldingTrans.GetChild(0).gameObject;
         temp.transform.SetParent(nearItemParent);
         temp.transform.position = nearItemParent.position;
         temp.transform.rotation = Quaternion.identity;
         temp.transform.localScale = Vector3.one;
-        nearItemParent = null;
         holdingstuff = null;
     }
 
