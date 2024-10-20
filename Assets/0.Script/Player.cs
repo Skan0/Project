@@ -36,7 +36,6 @@ public class Player : MonoBehaviour
     private float X, Y;
     private string[] tagsToCheck = { "Axe", "Pick","Wood","Stone"}; // 손에 들 수 있는 물건들의 태그 목록
     private string[] tagsToBreak = { "Tree", "Rock" };  //이건 스스로 점차 부서지면서 애니메이션이 켜져야 할거 같으니까 다른데서 만들자.
-    private bool closeToStuff = false;                  // 물건의 collider에 접촉중인가
     private Vector3 lastMoveDir;                        // 마지막 이동 방향
 
     private void Awake()
@@ -56,7 +55,6 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         holdingstuff = null;
     }
-
     void Update()
     {
         Movement();
@@ -65,7 +63,7 @@ public class Player : MonoBehaviour
     }
     
     // 플레이어 움직임 
-    void Movement()
+    private void Movement()
     {
         X = Input.GetAxis("Horizontal");
         Y = Input.GetAxis("Vertical");
@@ -97,7 +95,7 @@ public class Player : MonoBehaviour
     }
 
     // 앞으로 약간 빠르게 이동시켜줌
-    void Dash()
+    public void Dash()
     {
         // 대쉬 입력 처리 (쿨타임 적용)
         if ((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift)) && Time.time > lastDashTime + dashCooldown)
@@ -111,7 +109,7 @@ public class Player : MonoBehaviour
     }
 
     // 아이템과 관련된 상호작용을 담당하는 함수
-    void Interaction()
+    public void Interaction()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
         {
@@ -140,6 +138,11 @@ public class Player : MonoBehaviour
     // 바닥이 비어있을 때 부를 함수
     public void PutDownItem(Transform nearItemParent)
     {
+        if(nearItemParent == null)
+        {
+            Debug.LogError("nearItemParent가 null입니다.");
+            return;
+        }   
         GameObject temp = HoldingTrans.GetChild(0).gameObject;
         temp.transform.SetParent(nearItemParent);
         temp.transform.position = nearItemParent.position;
@@ -149,7 +152,7 @@ public class Player : MonoBehaviour
     }
 
     // 손에 있는 아이템과 바닥에 있는 아이템을 바꿔준다.
-    void SwapItem()
+    public void SwapItem()
     {
         GameObject temp = HoldingTrans.GetChild(0).gameObject;
         Transform Parent = nearItem.transform.parent;
@@ -161,7 +164,7 @@ public class Player : MonoBehaviour
     }
 
     // 손이 비어있을 때 아이템 들기
-    void PickUpItem()
+    public void PickUpItem()
     {
         // 부모를 변경 (HoldingTrans로)
         nearItem.transform.SetParent(HoldingTrans);
@@ -172,7 +175,6 @@ public class Player : MonoBehaviour
         nearItem.transform.localScale = Vector3.one;  // 스케일 초기화 (1, 1, 1)
 
         holdingstuff = nearItem.tag;
-        closeToStuff = false;
         nearItem = null;
     }
 
@@ -194,7 +196,6 @@ public class Player : MonoBehaviour
             {
                 Debug.Log(tag);
                 nearItem = child.gameObject;
-                closeToStuff = true;
                 return;  // 원하는 아이템을 찾으면 루프 종료
             }
         }
@@ -216,7 +217,6 @@ public class Player : MonoBehaviour
             if (child.CompareTag(tag))
             {
                 Debug.Log("Exit");
-                closeToStuff = false;
                 nearItem = null;
                 break;
             }

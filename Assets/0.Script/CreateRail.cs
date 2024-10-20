@@ -33,41 +33,34 @@ public class Create_Rail : MonoBehaviour
 
 
     }
-
+    void TryPlaceItem(Transform[] placeArray, string itemType)
+    {
+        for (int i = 0; i < placeArray.Length; i++)
+        {
+            if (placeArray[i].childCount == 0)
+            {
+                Debug.Log("내려놓기전이다.");
+                Player.instance.PutDownItem(placeArray[i]);
+                Debug.Log("내려놓았다.");
+                return;
+            }
+            if(i == placeArray.Length-1)
+                Debug.Log(itemType + "를 배치할 공간이 없습니다.");
+        }
+        
+    }
 
     void LoadStuff()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl)))
         {
             if (isPlayerHasWood)
             {
-                for (int i = 0; i < woodPlace.Length; i++)
-                {
-                    if (woodPlace[i].GetChild(0) == null)
-                    {
-                        Player.instance.PutDownItem(woodPlace[i]);
-                        break;
-                    }
-                    if (i == woodPlace.Length - 1)
-                    {
-                        Debug.Log("나무를 배치할 공간이 없습니다.");
-                    }
-                }
+                TryPlaceItem(woodPlace, "나무");
             }
             else if (isPlayerHasStone)
             {
-                for (int i = 0; i < stonePlace.Length; i++)
-                {
-                    if (stonePlace[i].GetChild(0) == null)
-                    {
-                        Player.instance.PutDownItem(stonePlace[i]);
-                        break;
-                    }
-                    if (i == stonePlace.Length - 1)
-                    {
-                        Debug.Log("돌을 배치할 공간이 없습니다.");
-                    }
-                }
+                TryPlaceItem(stonePlace, "돌");  
             }
         }
     }
