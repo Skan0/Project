@@ -425,6 +425,10 @@ MonoBehaviour:
   rotationSpeed: 5
   dashCooldown: 2
   holdingstuff: 
+  woodPlace: []
+  stonePlace: []
+  railPlace: []
+  Rail: {fileID: 0}
 --- !u!95 &1991033355148840574
 Animator:
   serializedVersion: 5
