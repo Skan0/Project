@@ -32,8 +32,13 @@ public class Stone : MonoBehaviour
             child = child.GetChild(0);
             if (child.CompareTag("Pick"))
             {
+                Player.instance.anim.SetBool("Working", true);
                 Hp -= 20 * Time.deltaTime;
             }
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Player.instance.anim.SetBool("Working", false);
     }
 }

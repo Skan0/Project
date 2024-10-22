@@ -7,6 +7,7 @@ public class Tree1 : MonoBehaviour
     public float Hp = 100f;
     public GameObject Wood;
     Transform parent;
+    
     private void Start()
     {
         parent = transform.parent;
@@ -34,9 +35,13 @@ public class Tree1 : MonoBehaviour
             child = child.GetChild(0);
             if (child.CompareTag("Axe"))
             {
+                Player.instance.anim.SetBool("Working", true);
                 Hp -= 20 * Time.deltaTime;
-                
             }
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Player.instance.anim.SetBool("Working", false);
     }
 }

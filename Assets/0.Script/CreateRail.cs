@@ -1,80 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/* wood를 손에 들고 collider안에서 space나 rightcontrol을 누르면 
- * CreateRail의 지정된 장소에 이동시키고 scale값으로 약간 줄였다가 CreateRail 뒤쪽에 
- * 제작 완성된 rail을 initiate 
- * rail을 바닥에 놓으면 근처에 rail이라는 tag를 가진 rail -> 이건 rail 스크립트를 만들어서 하자
- * 새로운 rail을 놓을 때 근처에 배치되어 있는 rail 근처에 놓으면 기존의 레일이 curved로 바뀔 수도 있어야 하는데 이건 어케 하지 ㅠㅡㅠ 
- * 이미 나무나 돌이 있다면 리스트형태로 여러개의 자원을 받을 수 있게 만들고 위에 점차 쌓이게 만들자
- * 
+/*
+ * CreateRail: 손에 든 wood와 stone을 이용해 rail을 생성하는 클래스
+ * 1. wood와 stone이 모두 있는 상태에서 레일을 생성.
+ * 2. 지정된 장소에 레일을 놓고, 기존의 자원들은 제거.
+ * 3. 레일을 배치할 때, 주변에 레일이 있다면 그에 맞게 곡선 형태로 전환될 수도 있음.
+ * 4. 여러 자원을 받을 수 있게 만들고, 자원이 쌓이는 방식으로 확장 가능.
  */
 public class Create_Rail : MonoBehaviour
 {
-    public Transform[] woodPlace;
-    public Transform[] stonePlace;
-    public Transform[] railPlace;
-    public GameObject Rail;
+    public Transform[] woodPlace;       // wood가 놓일 장소 배열
+    public Transform[] stonePlace;      // stone이 놓일 장소 배열
+    public Transform[] railPlace;       // rail이 배치될 장소 배열
+    public GameObject Rail;             // 생성할 rail 프리팹
 
-    private bool isPlayerHasWood = false;
-    private bool isPlayerHasStone = false;
-    // Update is called once per frame
     void Update()
     {
-        if (woodPlace.Length != 0 && stonePlace.Length != 0)
+        // woodPlace와 stonePlace의 첫 번째 위치에 자원이 모두 있을 경우에만 레일을 생성합니다.
+        if (woodPlace[0].childCount>0 && stonePlace[0].childCount > 0)
         {
             createRail();
         }
-        LoadStuff();
     }
 
-
-    void createRail() { 
-
-
-    }
-    void TryPlaceItem(Transform[] placeArray, string itemType)
+    void createRail()
     {
-        for (int i = 0; i < placeArray.Length; i++)
+        int i, j;
+        for ( i = woodPlace.Length - 1; i >= 0; i--)
         {
-            if (placeArray[i].childCount == 0)
+            if (woodPlace[i].childCount > 0)
             {
-                Debug.Log("내려놓기전이다.");
-                Player.instance.PutDownItem(placeArray[i]);
-                Debug.Log("내려놓았다.");
-                return;
-            }
-            if(i == placeArray.Length-1)
-                Debug.Log(itemType + "를 배치할 공간이 없습니다.");
-        }
-        
-    }
-
-    void LoadStuff()
-    {
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl)))
-        {
-            if (isPlayerHasWood)
-            {
-                TryPlaceItem(woodPlace, "나무");
-            }
-            else if (isPlayerHasStone)
-            {
-                TryPlaceItem(stonePlace, "돌");  
+                break;
             }
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        for ( j = stonePlace.Length - 1; j >= 0; j--)
         {
-            if (Player.instance.holdingstuff =="Wood")
+            if (stonePlace[j].childCount > 0)
             {
-                isPlayerHasWood = true;                
+                break;
             }
-            else if(Player.instance.holdingstuff == "Stone")
+        }
+        StartCoroutine(DestroyAfterDelay(woodPlace[i].GetChild(0).gameObject,stonePlace[i].GetChild(0).gameObject, 2f));        
+    }
+
+    // 일정 시간 후에 자원을 파괴하고 레일을 생성하는 코루틴
+    IEnumerator DestroyAfterDelay(GameObject obj1, GameObject obj2, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(obj1);
+        Destroy(obj2);
+        for (int i = 0; i < railPlace.Length; i++)
+        {
+            if (railPlace[i].childCount == 0)
             {
-                isPlayerHasStone = true; 
+                Instantiate(Rail, railPlace[i].transform);
+                break;
             }
         }
     }

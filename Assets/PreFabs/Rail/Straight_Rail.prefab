@@ -749,6 +749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6601658545898230133}
   - component: {fileID: 8169766457265532564}
+  - component: {fileID: -4282974206003351014}
   m_Layer: 0
   m_Name: Straight_Rail
   m_TagString: S_Rail
@@ -799,6 +800,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.385904, y: 0.7428981, z: 7.687924}
   m_Center: {x: 0.045536116, y: 3.8125753, z: 0.08856391}
+--- !u!114 &-4282974206003351014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3325401130557849639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a9ca2d55074d640b89d5887c8426ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdAble: 1
 --- !u!1 &3901368751348743430
 GameObject:
   m_ObjectHideFlags: 0

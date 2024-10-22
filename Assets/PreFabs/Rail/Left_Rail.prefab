@@ -1694,6 +1694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515565772881620680}
   - component: {fileID: 7040572733035523214}
+  - component: {fileID: 3274402509054519320}
   m_Layer: 0
   m_Name: Left_Rail
   m_TagString: L_Rail
@@ -1738,6 +1739,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.385904, y: 0.74289817, z: 7.225517}
   m_Center: {x: 0.045536183, y: 3.8125753, z: -0.06702918}
+--- !u!114 &3274402509054519320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8232204842135544475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a9ca2d55074d640b89d5887c8426ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdAble: 1
 --- !u!1 &8965956532782064578
 GameObject:
   m_ObjectHideFlags: 0

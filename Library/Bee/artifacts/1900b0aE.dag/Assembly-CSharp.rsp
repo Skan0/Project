@@ -364,7 +364,9 @@
 "Assets/0.Script/EndPoint.cs"
 "Assets/0.Script/GameManager.cs"
 "Assets/0.Script/Player.cs"
+"Assets/0.Script/Rail.cs"
 "Assets/0.Script/Stone.cs"
+"Assets/0.Script/Tile.cs"
 "Assets/0.Script/Train.cs"
 "Assets/0.Script/Tree1.cs"
 -langversion:9.0

@@ -25,16 +25,20 @@ public class Player : MonoBehaviour
     private float X, Y;
     private string[] tagsToCheck = { "Axe", "Pick", "Wood", "Stone" }; // 손에 들 수 있는 물건 태그 목록
     private string[] tagsToBreak = { "Tree", "Rock" };  // 부술 수 있는 물건 태그 목록
+    private string[] tagsOfRails = { "S_Rail", "R_Rail", "R_Rail" };
     private Vector3 lastMoveDir;        // 마지막 이동 방향
 
+    
     //CreateRail에서 쓰던거 
     public Transform[] woodPlace;
-    public Transform[] stonePlace;
+    public Transform[] stonePlace; 
     public Transform[] railPlace;
     public GameObject Rail;
 
     private bool isPlayerHasWood = false;
     private bool isPlayerHasStone = false;
+    private bool isHoldAbleRail = false;
+    
 
     private void Awake()
     {
@@ -58,7 +62,8 @@ public class Player : MonoBehaviour
     {
         Movement();
         Dash();
-        Interaction();
+        if(nearItem != null)InteractionWithNearItem();
+        else InteractionWithoutNearItem();
     }
 
     // 플레이어 움직임 
@@ -104,51 +109,53 @@ public class Player : MonoBehaviour
         }
     }
 
-    // 아이템과 관련된 상호작용 담당
-    public void Interaction()
+    //아이템 | 소지중 | 없음
+    // 근처 O|  교체  |  들기
+    // 근처 X|내려놓기|   X
+
+    //rail을 받아야할 때 들고 있는 물건이 있으면 본인이 있는 타일의 바로 아래에 둬야하는데 아래에 뭔가 있으면 소지중인 물건과 바뀌게 먼저 검사하면 문제가 해결되겠다.
+    public void InteractionWithNearItem()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
         {
-            Debug.Log("Pressed command");
-            if (nearItem != null)  // 가까운 아이템이 있는 경우
+            //물건 들기
+            if (holdingstuff == null)
             {
-                Debug.Log("nearItem != null");
-                if (holdingstuff == null)  // 손에 들고 있는 물건이 없는 경우
-                {
-                    PickUpItem();
-                }
-                else
-                {
-                    SwapItem();
-                }
+                PickUpItem();
             }
-            else if(holdingstuff != null && (isPlayerHasStone || isPlayerHasWood))
+            //물건 교체
+            else
             {
-                if (isPlayerHasWood)
+                SwapItem();
+            }
+        }
+    }
+
+    // 아이템과 관련된 상호작용 담당
+    public void InteractionWithoutNearItem()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightControl))
+        {
+            if(holdingstuff != null)
+            {
+                if (isPlayerHasStone)
                 {
                     PlaceItemToCreateRail(woodPlace);
                 }
-                else if (isPlayerHasStone) 
+                else if (isPlayerHasWood)
                 {
                     PlaceItemToCreateRail(stonePlace);
                 }
-            }
-            else if (holdingstuff != null)  // 들고 있는 물건이 있을 때 내려놓기
-            {
-                Debug.Log("holdingstuff: " + holdingstuff);
 
                 if (nearItemParent != null)
                 {
                     PutDownItem(nearItemParent);
                     nearItemParent = null;
                 }
-                else
-                {
-                    Debug.LogWarning("nearItemParent가 null입니다. 아이템을 내려놓을 수 없습니다.");
-                }
             }
         }
     }
+
     void PlaceItemToCreateRail(Transform[] placeArry)
     {
         for (int i = 0; i < placeArry.Length; i++)
@@ -226,7 +233,7 @@ public class Player : MonoBehaviour
         }
 
         Transform child = other.transform.GetChild(0);
-
+        //손에 들 수 있는 아이템목록과 비교
         foreach (string tag in tagsToCheck)
         {
             if (child.CompareTag(tag))
@@ -236,18 +243,34 @@ public class Player : MonoBehaviour
                 return;
             }
         }
+
+        //rail 생성하는 오브젝트와 비교
         if (other.CompareTag("CreateRail")) 
-        { 
-            if(holdingstuff == "Wood")
+        {
+            if (holdingstuff == "Wood")
             {
                 isPlayerHasWood = true;
-            }   
-            else if(holdingstuff == "Stone")
+            }
+            else if (holdingstuff == "Stone")
             {
                 isPlayerHasStone = true;
             }
+            
+        }
+
+        //rail종류와 비교
+        foreach(string tag in tagsOfRails)
+        {
+            if (child.CompareTag(tag))
+            {
+                if (other.GetComponent<Rail>().holdAble)
+                {
+                    isHoldAbleRail = true;
+                }
+            }
         }
     }
+   
     // 충돌 종료 시 호출
     private void OnTriggerExit(Collider other)
     {
@@ -266,6 +289,13 @@ public class Player : MonoBehaviour
                 Debug.Log("Exit: " + child.name);
                 nearItem = null;
                 break;
+            }
+        }
+        foreach (string tag in tagsOfRails)
+        {
+            if (child.CompareTag(tag))
+            {
+                isHoldAbleRail = false;
             }
         }
     }
