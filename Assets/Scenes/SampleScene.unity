@@ -122,6 +122,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &58133415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6577269658834196557, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &68587394 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2674245182233006220, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +226,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 74.844, y: -138.145, z: -68.043}
+--- !u!4 &735741290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 273668216765693217, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +337,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Train: {fileID: 3934287804307430547}
+--- !u!4 &1045179467 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8458565673624867154, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1065852575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3752398713720834330, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1691040164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 427396282481511441, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1986760682
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +400,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2036834004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2684702923392413021, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2073607255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8885557783340180093, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
+  m_PrefabInstance: {fileID: 8772843465360919266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3934287804307430547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8017336484237306751, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
@@ -427,6 +467,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: woodPlaces.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: stonePlaces.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: woodPlaces.Array.data[0]
+      value: 
+      objectReference: {fileID: 1065852575}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: woodPlaces.Array.data[1]
+      value: 
+      objectReference: {fileID: 68587394}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: woodPlaces.Array.data[2]
+      value: 
+      objectReference: {fileID: 2073607255}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: woodPlaces.Array.data[3]
+      value: 
+      objectReference: {fileID: 1045179467}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: stonePlaces.Array.data[0]
+      value: 
+      objectReference: {fileID: 58133415}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: stonePlaces.Array.data[1]
+      value: 
+      objectReference: {fileID: 735741290}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: stonePlaces.Array.data[2]
+      value: 
+      objectReference: {fileID: 2036834004}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: stonePlaces.Array.data[3]
+      value: 
+      objectReference: {fileID: 1691040164}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

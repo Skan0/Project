@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\onedrive\\desktop\\project\\assets\\0.script\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\player\\playerinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\player\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\onedrive\\desktop\\project\\assets\\0.script\\player\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\player\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\onedrive\\desktop\\project\\assets\\0.script\\map\\rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\map\\rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\onedrive\\desktop\\project\\assets\\have to make.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\have to make.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\assets\\0.script\\map\\rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\0.script\\map\\rail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Player\\Player.cs",
               "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\0.Script\\Player\\Player.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwCgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T16:19:30.584Z",
               "IsPinned": true,
@@ -44,7 +48,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "PlayerInventory.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\PlayerInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\0.Script\\Player\\PlayerInventory.cs",
+              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\PlayerInventory.cs",
+              "RelativeToolTip": "Assets\\0.Script\\Player\\PlayerInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T16:37:21.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Have to make.txt",
+              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\Have to make.txt",
+              "RelativeDocumentMoniker": "Assets\\Have to make.txt",
+              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\Have to make.txt",
+              "RelativeToolTip": "Assets\\Have to make.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-25T02:35:07.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Rail.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Map\\Rail.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Map\\Rail.cs",
@@ -57,34 +87,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerInteraction.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\PlayerInteraction.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Player\\PlayerInteraction.cs",
               "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\PlayerInteraction.cs",
               "RelativeToolTip": "Assets\\0.Script\\Player\\PlayerInteraction.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAzwBwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T16:36:06.339Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerInventory.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\PlayerInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\0.Script\\Player\\PlayerInventory.cs",
-              "ToolTip": "C:\\Users\\sytwj\\OneDrive\\Desktop\\Project\\Assets\\0.Script\\Player\\PlayerInventory.cs",
-              "RelativeToolTip": "Assets\\0.Script\\Player\\PlayerInventory.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwA4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:37:21.271Z",
               "EditorCaption": ""
             }
           ]

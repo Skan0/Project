@@ -1,16 +1,19 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private string[] pickableTags = { "Axe", "Pick", "Wood", "Stone" };
     [SerializeField] private string[] railTags = { "S_Rail", "R_Rail", "R_Rail" };
-
+    [SerializeField] public Transform[] woodPlaces;
+    [SerializeField] public Transform[] stonePlaces;
+   
     private GameObject nearbyItem;
     private Transform nearbyItemParent;
     private PlayerInventory inventory;
 
     private bool isNearCreateRail;
-    private bool canHoldRail;
+    private bool isStone = false; //나무는 false 돌은 true 
 
     private void Start()
     {
@@ -21,15 +24,23 @@ public class PlayerInteraction : MonoBehaviour
     //  근처에 물건 X |    dropitem     |       x
     public void HandleInteraction()
     {
+        if (isNearCreateRail) 
+        {
+            if (isStone)
+                FindEmptyPlace(stonePlaces);
+            
+            else
+                FindEmptyPlace(woodPlaces);
+        }
         if (nearbyItem != null)
         {
             if (!inventory.HasItem)
             {
-                if (canHoldRail) 
-                { 
-                
-                }
                 inventory.PickUpItem(nearbyItem);
+                if (nearbyItem.tag == "Wood")
+                    isStone = false;
+                else if( nearbyItem.tag == "Stone")
+                    isStone = true;
                 nearbyItem = null;
             }
             else
@@ -41,9 +52,17 @@ public class PlayerInteraction : MonoBehaviour
         {
             inventory.DropItem(nearbyItemParent);
         }
-        
     }
-
+    private void FindEmptyPlace(Transform[] places)
+    {
+        foreach (Transform t in places)
+        {
+            if (t != null && t.childCount == 0)
+            {
+                inventory.DropItem(t);
+            }
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.childCount == 0)
@@ -66,7 +85,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (IsRailItem(child.tag) && other.GetComponent<Rail>()?.holdAble == true)
         {
-            canHoldRail = true;
+            nearbyItem = child.gameObject;
         }
     }
 
@@ -85,16 +104,9 @@ public class PlayerInteraction : MonoBehaviour
             {
                 nearbyItem = null;
             }
-
-            if (IsRailItem(child.tag))
-            {
-                canHoldRail = false;
-            }
         }
     }
 
     private bool IsPickableItem(string tag) => System.Array.Exists(pickableTags, t => t == tag);
     private bool IsRailItem(string tag) => System.Array.Exists(railTags, t => t == tag);
-    //rail에 기차가 지나갔는지를 감지하고 bool 형태로 플레이어가 rail을 들수있나 없나를 나타내야한다.
-    //
 }
