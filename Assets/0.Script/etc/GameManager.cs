@@ -7,6 +7,7 @@ public enum GameState
 {
     Stop,
     Play,
+    End
 }
 
 public class GameManager : MonoBehaviour

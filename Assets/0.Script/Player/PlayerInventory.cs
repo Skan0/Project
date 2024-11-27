@@ -6,8 +6,11 @@ public class PlayerInventory : MonoBehaviour
 
     private GameObject heldItem;
     private string holdingItemTag;
-
+    
+    //heldItem이 null이면 false null이 아니면 true
     public bool HasItem => heldItem != null;
+
+    //helditemtag에 holdingitemtag를 넣어준것?
     public string HeldItemTag => holdingItemTag;
 
     public void PickUpItem(GameObject item)

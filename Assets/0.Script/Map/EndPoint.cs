@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class EndPoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    GameManager gameManager;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Train"))
+        {
+            gameManager.UpdateGameState(GameState.Stop);
+        }
     }
 }

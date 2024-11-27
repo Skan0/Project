@@ -7,13 +7,13 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private string[] railTags = { "S_Rail", "R_Rail", "R_Rail" };
     [SerializeField] public Transform[] woodPlaces;
     [SerializeField] public Transform[] stonePlaces;
-   
+
     private GameObject nearbyItem;
     private Transform nearbyItemParent;
     private PlayerInventory inventory;
 
     private bool isNearCreateRail;
-    private bool isStone = false; //나무는 false 돌은 true 
+    public bool isStone = false; //나무는 false 돌은 true 
 
     private void Start()
     {
@@ -24,13 +24,19 @@ public class PlayerInteraction : MonoBehaviour
     //  근처에 물건 X |    dropitem     |       x
     public void HandleInteraction()
     {
-        if (isNearCreateRail) 
+        if (isNearCreateRail)
         {
+            //돌을 들고있다면 돌놓는 장소에만 놓을 수 있게 되어있는데 이게 제대로 되어있지 않다.
             if (isStone)
+            {
                 FindEmptyPlace(stonePlaces);
-            
+                isStone = false;
+            }
             else
+            {
                 FindEmptyPlace(woodPlaces);
+                isStone= true;
+            }
         }
         if (nearbyItem != null)
         {
@@ -39,7 +45,7 @@ public class PlayerInteraction : MonoBehaviour
                 inventory.PickUpItem(nearbyItem);
                 if (nearbyItem.tag == "Wood")
                     isStone = false;
-                else if( nearbyItem.tag == "Stone")
+                else if (nearbyItem.tag == "Stone")
                     isStone = true;
                 nearbyItem = null;
             }
@@ -48,11 +54,16 @@ public class PlayerInteraction : MonoBehaviour
                 inventory.SwapItem(nearbyItem);
             }
         }
+        else if (inventory.HasItem)
+        {
+
+        }
         else if (inventory.HasItem && nearbyItemParent != null)
         {
             inventory.DropItem(nearbyItemParent);
         }
     }
+    // createRail에서 비어있는 칸에 오브젝트를 넣는 코드
     private void FindEmptyPlace(Transform[] places)
     {
         foreach (Transform t in places)

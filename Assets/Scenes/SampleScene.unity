@@ -347,6 +347,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3752398713720834330, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
   m_PrefabInstance: {fileID: 8772843465360919266}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1461096995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3095742223109437969, guid: 6ff97f966b1882c4a85d6a4c41fb7f81, type: 3}
+  m_PrefabInstance: {fileID: 8457684616597328074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1461096997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461096995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904398255d5992f46a4844ab08e9bafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WoodBox: {fileID: 0}
 --- !u!4 &1691040164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 427396282481511441, guid: 9abfa0672d79197448a6d4eb6a917c98, type: 3}
@@ -476,6 +494,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
+      propertyPath: interactableLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899627885553238468, guid: a083578832f427e4c947f4ad78196eca, type: 3}
       propertyPath: woodPlaces.Array.data[0]
       value: 
       objectReference: {fileID: 1065852575}
@@ -520,6 +542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2527506039117014507, guid: 6ff97f966b1882c4a85d6a4c41fb7f81, type: 3}
+      propertyPath: m_Name
+      value: EndPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 6312116063866140076, guid: 6ff97f966b1882c4a85d6a4c41fb7f81, type: 3}
       propertyPath: m_Name
       value: Map
@@ -567,7 +593,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3095742223109437969, guid: 6ff97f966b1882c4a85d6a4c41fb7f81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461096997}
   m_SourcePrefab: {fileID: 100100000, guid: 6ff97f966b1882c4a85d6a4c41fb7f81, type: 3}
 --- !u!1001 &8772843465360919266
 PrefabInstance:
