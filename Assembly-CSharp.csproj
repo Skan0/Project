@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\0.Script\Water.cs" />
+    <Compile Include="Assets\0.Script\Network\Net_Room_Mng.cs" />
     <Compile Include="Assets\0.Script\Player\PlayerInventory.cs" />
     <Compile Include="Assets\0.Script\Map\Tile.cs" />
     <Compile Include="Assets\0.Script\Player\PlayerMovement.cs" />
@@ -73,10 +74,13 @@
     <Compile Include="Assets\0.Script\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\0.Script\Network\Net_Mng.cs" />
     <Compile Include="Assets\0.Script\etc\GameManager.cs" />
+    <Compile Include="Assets\Net\Net_Room_Mananger.cs" />
     <Compile Include="Assets\0.Script\Stuff\Tree1.cs" />
     <Compile Include="Assets\0.Script\Stuff\Stone.cs" />
     <Compile Include="Assets\0.Script\etc\Camera.cs" />
+    <Compile Include="Assets\0.Script\Network\Net_Scene_Mng.cs" />
     <Compile Include="Assets\0.Script\Map\Train.cs" />
+    <Compile Include="Assets\Net\Net_Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -475,6 +475,8 @@
 "Assets/0.Script/Map/Tile.cs"
 "Assets/0.Script/Map/Train.cs"
 "Assets/0.Script/Network/Net_Mng.cs"
+"Assets/0.Script/Network/Net_Room_Mng.cs"
+"Assets/0.Script/Network/Net_Scene_Mng.cs"
 "Assets/0.Script/Player/Player.cs"
 "Assets/0.Script/Player/PlayerInteraction.cs"
 "Assets/0.Script/Player/PlayerInventory.cs"
@@ -482,6 +484,8 @@
 "Assets/0.Script/Stuff/Stone.cs"
 "Assets/0.Script/Stuff/Tree1.cs"
 "Assets/0.Script/Water.cs"
+"Assets/Net/Net_Manager.cs"
+"Assets/Net/Net_Room_Mananger.cs"
 -langversion:9.0
 /deterministic
 /optimize+
