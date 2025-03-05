@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class Cam : MonoBehaviour
 {
+    //기차의 이동에 따라 같이 움직이는 카메라
     public Transform Train;
 
     private float InitZ;

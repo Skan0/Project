@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] Player;
     public Transform[] PlayerSpawnPoint;
     public int PlayerCount;
+
     void Awake()
     {
         // GameManager 인스턴스가 하나만 존재하도록 설정
