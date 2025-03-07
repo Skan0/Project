@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientAuthoritativeMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientAuthoritativeMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\documents\\github\\project\\assets\\network\\net_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\documents\\github\\project\\assets\\network\\net_scene_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_scene_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\documents\\github\\project\\assets\\network\\net_room_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_room_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\assets\\0.script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\0.Script\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Player\\Player.cs",
@@ -47,54 +43,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientAuthoritativeMovement.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientAuthoritativeMovement.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientAuthoritativeMovement.cs",
-              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientAuthoritativeMovement.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientAuthoritativeMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:25:59.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientNetworkTransform.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientNetworkTransform.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientNetworkTransform.cs",
-              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientNetworkTransform.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.multiplayer.center.quickstart\\Runtime\\NetcodeForGameObjectsExample\\ClientNetworkTransform.cs",
+              "Title": "Net_Scene_Mng.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Scene_Mng.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Net_Scene_Mng.cs",
+              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Scene_Mng.cs",
+              "RelativeToolTip": "Assets\\Network\\Net_Scene_Mng.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:25:45.955Z",
+              "WhenOpened": "2025-03-05T11:22:46.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NetworkObject.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkObject.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkObject.cs",
-              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkObject.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Net_Room_Mng.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Room_Mng.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Net_Room_Mng.cs",
+              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Room_Mng.cs",
+              "RelativeToolTip": "Assets\\Network\\Net_Room_Mng.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:25:40.623Z",
+              "WhenOpened": "2025-03-05T11:22:39.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NetworkManager.cs",
-              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkManager.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkManager.cs",
-              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkManager.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.netcode.gameobjects\\Runtime\\Core\\NetworkManager.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAAABwAAABAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Net_Mng.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Mng.cs",
+              "RelativeDocumentMoniker": "Assets\\Network\\Net_Mng.cs",
+              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Mng.cs",
+              "RelativeToolTip": "Assets\\Network\\Net_Mng.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:19:29.844Z",
+              "WhenOpened": "2025-03-05T11:20:05.003Z",
               "EditorCaption": ""
             }
           ]

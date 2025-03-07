@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\0.Script\Water.cs" />
+    <Compile Include="Assets\Network\Net_Room_Mng.cs" />
     <Compile Include="Assets\0.Script\Player\PlayerInventory.cs" />
     <Compile Include="Assets\0.Script\Map\Tile.cs" />
     <Compile Include="Assets\0.Script\Player\PlayerMovement.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\0.Script\Map\EndPoint.cs" />
     <Compile Include="Assets\0.Script\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\Network\Net_Mng.cs" />
+    <Compile Include="Assets\Network\Net_Scene_Mng.cs" />
     <Compile Include="Assets\0.Script\etc\GameManager.cs" />
     <Compile Include="Assets\0.Script\Stuff\Tree1.cs" />
     <Compile Include="Assets\0.Script\etc\Cam.cs" />
