@@ -363,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674488387}
-  - component: {fileID: 674488386}
+  - component: {fileID: 674488388}
   m_Layer: 0
   m_Name: '##Net'
   m_TagString: Untagged
@@ -371,19 +371,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &674488386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674488385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363807d8d31475348bee170edcbce321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartMatchButton: {fileID: 797333597}
 --- !u!4 &674488387
 Transform:
   m_ObjectHideFlags: 0
@@ -399,6 +386,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674488388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674488385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713a3f2598d298e48922aebdb7c20c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartMatchButton: {fileID: 797333597}
+  Matching_Object: {fileID: 0}
+  CancelButton: {fileID: 0}
 --- !u!1 &797333596
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\documents\\github\\project\\assets\\network\\net_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\documents\\github\\project\\assets\\network\\net_scene_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\assets\\network\\net_scene_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_scene_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|c:\\users\\sytwj\\documents\\github\\project\\assets\\network\\net_room_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\assets\\network\\net_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart@1fcc41c23ee5\\Runtime\\NetcodeForGameObjectsExample\\TemporaryUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.multiplayer.center.quickstart@1fcc41c23ee5\\Runtime\\NetcodeForGameObjectsExample\\TemporaryUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|C:\\Users\\sytwj\\Documents\\GitHub\\Project\\assets\\network\\net_room_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|Assembly-CSharp.csproj|solutionrelative:assets\\network\\net_room_mng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\0.Script\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\0.Script\\Player\\Player.cs",
@@ -43,7 +47,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "TemporaryUI.cs",
+              "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart@1fcc41c23ee5\\Runtime\\NetcodeForGameObjectsExample\\TemporaryUI.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.multiplayer.center.quickstart@1fcc41c23ee5\\Runtime\\NetcodeForGameObjectsExample\\TemporaryUI.cs",
+              "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Library\\PackageCache\\com.unity.multiplayer.center.quickstart@1fcc41c23ee5\\Runtime\\NetcodeForGameObjectsExample\\TemporaryUI.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.multiplayer.center.quickstart@1fcc41c23ee5\\Runtime\\NetcodeForGameObjectsExample\\TemporaryUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T09:59:10.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Net_Scene_Mng.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Scene_Mng.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Net_Scene_Mng.cs",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Net_Room_Mng.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Room_Mng.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Net_Room_Mng.cs",
@@ -64,18 +81,17 @@
               "RelativeToolTip": "Assets\\Network\\Net_Room_Mng.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T11:22:39.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T11:22:39.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Net_Mng.cs",
               "DocumentMoniker": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Mng.cs",
               "RelativeDocumentMoniker": "Assets\\Network\\Net_Mng.cs",
               "ToolTip": "C:\\Users\\sytwj\\Documents\\GitHub\\Project\\Assets\\Network\\Net_Mng.cs",
               "RelativeToolTip": "Assets\\Network\\Net_Mng.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAUwCgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T11:20:05.003Z",
               "EditorCaption": ""

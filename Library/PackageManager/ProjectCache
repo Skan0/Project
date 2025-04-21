@@ -5,29 +5,29 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638766404228742165
-    m_Hash: 2896638778
+      ticks: 638769379735998743
+    m_Hash: 1743146519
   m_LockFileStatus:
     m_FilePath: C:/Users/sytwj/Documents/GitHub/Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638766404228832730
-    m_Hash: 2552425814
+      ticks: 638769380005519204
+    m_Hash: 2938763985
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/sytwj/Documents/GitHub/Project/Packages
-m_EditorVersion: 6000.0.31f1 (a206c360e2a8)
+m_EditorVersion: 6000.0.41f1 (46e447368a18)
 m_ResolvedPackages:
 - packageId: com.unity.2d.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.2d.tilemap
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.2d.tilemap@91afae292a4e
   assetPath: Packages/com.unity.2d.tilemap
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
@@ -104,7 +104,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 90fc3d022e139285a361c6ed808cb991b4d07184
+  fingerprint: 91afae292a4e9c80c9c83328346b52d1bb443abe
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -114,7 +114,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.1.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.2d.tilemap.extras
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.2d.tilemap.extras@13634da7dbe0
   assetPath: Packages/com.unity.2d.tilemap.extras
   name: com.unity.2d.tilemap.extras
   displayName: 2D Tilemap Extras
@@ -254,12 +254,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 4.1.0
     minimumUnityVersion: 6000.0.0a1
-- packageId: com.unity.collab-proxy@2.5.2
+- packageId: com.unity.collab-proxy@2.7.1
   testable: 0
   isDirectDependency: 1
-  version: 2.5.2
+  version: 2.7.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.collab-proxy
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.collab-proxy@50ac96531b63
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -353,10 +353,8 @@ m_ResolvedPackages:
     - 2.6.0
     - 2.7.1
     compatible:
-    - 2.5.2
-    - 2.6.0
     - 2.7.1
-    recommended: 2.5.2
+    recommended: 2.7.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -375,6 +373,7 @@ m_ResolvedPackages:
   - teams
   - version
   - vcs
+  - uvcs
   registry:
     id: main
     name: 
@@ -387,16 +386,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638630364536670000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.5/manual/index.html
+  datePublishedTicks: 638751271186710000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.7/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: c402e6396d3ea20ecb2d59eac908e7e0a30cd7e6
+    revision: cf9c21f84be18cbe2d6a93ec7cfbeb01b4310bbe
     path: 
   unityLifecycle:
-    version: 2.5.2
+    version: 2.7.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -406,21 +405,44 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fix token renewal issue: Can''t obtain
-    a new token (Message: Invalid Refresh Token., Code: 132.104)"}'
+  upmReserved: "{\"changelog\":\"### Added\\n\\n- You can now Shelve your selected
+    Pending Changes, inspect the shelves content, and apply them to your workspace.\\n-
+    You can now Shelve your Pending Changes when switching to another branch (or
+    changeset) and decide if you want to apply them automatically after the switch.\\n-
+    You can now create a code review from the list of branches (or changesets) opening
+    either the Desktop App or the Unity Cloud website.\\n\\n### Changed\\n\\n- Serialize
+    the Checkin comment and tick selection so they are kept on any domain reload
+    and play mode.\\n- Optimized incoming changes & merge to only reload the Package
+    Manager when needed.\\n- Added dedicated toolbar buttons to open the list of
+    branches and the Branch Explorer of the Desktop App.\\n- Reworded the changeset
+    context menu \\\"Undo this change\\\" to \\\"Revert this file to the previous
+    revision\\\" so it\u2019s more explicit.\\n- Moved the 'Unity Version Control'
+    menu item under 'Window'/'Version Control' submenu starting from Unity 6.1.\\n-
+    Improve the Create workspace window to suggest the matching Unity Cloud project
+    if it exists.\\n\\n### Fixed\\n\\n- Ensured ignore.conf is not being reformatted
+    when adding or removing an ignore rule, so it keeps empty lines and comments.\\n-
+    Fixed missing checked-out for renamed assets.\\n- Fixed rename asset leaves 'Added'
+    + 'Remove locally' status instead of 'Moved'.\\n- Fixed console error GUI Error:
+    Invalid GUILayout state in PlasticWindow view which is caused under some circumstances.\\n-
+    Fixed null exception on entering in Play Mode before creating the workspace.\\n-
+    Fixed lock statuses to correctly refresh in Project View and Inspector after
+    merging.\\n- Fixed a performance issue by preventing the ConfigureLogging call
+    on every domain reload when Unity Version Control is not used, reducing the load
+    time by ~200ms. .\\n- Fixed the create branch operation to work in Gluon mode
+    which uses partial workspaces.\"}"
   assetStore:
     productId: 
-  fingerprint: da7e55b87e08569f31766e7cabc37bc033c9c7f9
+  fingerprint: 50ac96531b6358586ccfdf8cc845939bf50d9fab
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.5.2
-    minimumUnityVersion: 2020.3.48f1
-- packageId: com.unity.dedicated-server@1.3.2
+    minimumPackageVersion: 2.7.1
+    minimumUnityVersion: 2021.3.0f1
+- packageId: com.unity.dedicated-server@1.3.3
   testable: 0
   isDirectDependency: 1
-  version: 1.3.2
+  version: 1.3.3
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.dedicated-server
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.dedicated-server@2b38b7e45412
   assetPath: Packages/com.unity.dedicated-server
   name: com.unity.dedicated-server
   displayName: Dedicated Server
@@ -465,7 +487,6 @@ m_ResolvedPackages:
     - 1.4.0-pre.3
     - 1.4.0
     compatible:
-    - 1.3.2
     - 1.3.3
     - 1.4.0-pre.1
     - 1.4.0-pre.2
@@ -486,16 +507,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638677352653640000
+  datePublishedTicks: 638699758802530000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.dedicated-server@1.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/multiplayer-workflows.git
-    revision: e37ee47b0dc43737043419e88449189240fe4161
+    revision: 6ae8c17d7a4a53a74f0ad59fdef3e9748a9d0fba
     path: 
   unityLifecycle:
-    version: 1.3.2
+    version: 1.3.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -509,17 +530,17 @@ m_ResolvedPackages:
     Playmode"}'
   assetStore:
     productId: 
-  fingerprint: d00a474aeecd0e158bd0778b6b1744e46929581a
+  fingerprint: 2b38b7e4541216b8b23cedae9b9061892209a46f
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.3.2
+    minimumPackageVersion: 1.3.3
     minimumUnityVersion: 6000.0.22f1
 - packageId: com.unity.feature.development@1.0.2
   testable: 0
   isDirectDependency: 1
   version: 1.0.2
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.feature.development
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.feature.development@767aadbc6eb7
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -558,7 +579,7 @@ m_ResolvedPackages:
   - name: com.unity.ide.visualstudio
     version: 2.0.22
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -570,7 +591,7 @@ m_ResolvedPackages:
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
-    version: 1.2.2
+    version: 1.2.3
   - name: com.unity.testtools.codecoverage
     version: 1.2.6
   - name: com.unity.settings-manager
@@ -620,7 +641,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 5.1.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.formats.fbx
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.formats.fbx@4ad3eb16b616
   assetPath: Packages/com.unity.formats.fbx
   name: com.unity.formats.fbx
   displayName: FBX Exporter
@@ -741,7 +762,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.center
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -821,7 +842,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: f502d8ac613fa076192423e73892fbd89eb4049b
+  fingerprint: f3fb577b3546594b97b8cc34307cd621f60f1c73
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
@@ -831,7 +852,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.center.quickstart
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.center.quickstart@1fcc41c23ee5
   assetPath: Packages/com.unity.multiplayer.center.quickstart
   name: com.unity.multiplayer.center.quickstart
   displayName: Multiplayer Center Quickstart Content
@@ -928,7 +949,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.3.3
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.playmode
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.playmode@7f4b34d911b7
   assetPath: Packages/com.unity.multiplayer.playmode
   name: com.unity.multiplayer.playmode
   displayName: Multiplayer Play Mode
@@ -975,7 +996,6 @@ m_ResolvedPackages:
     - 1.4.0-pre.3
     - 1.4.0
     compatible:
-    - 1.3.2
     - 1.3.3
     - 1.4.0-pre.1
     - 1.4.0-pre.2
@@ -1009,7 +1029,7 @@ m_ResolvedPackages:
     revision: 6ae8c17d7a4a53a74f0ad59fdef3e9748a9d0fba
     path: 
   unityLifecycle:
-    version: 1.3.2
+    version: 1.3.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1028,14 +1048,14 @@ m_ResolvedPackages:
   fingerprint: 7f4b34d911b742add04987f7f0561fec9ff9c189
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.3.2
+    minimumPackageVersion: 1.3.3
     minimumUnityVersion: 6000.0.22f1
 - packageId: com.unity.multiplayer.tools@2.2.3
   testable: 0
   isDirectDependency: 1
   version: 2.2.3
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.tools
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.tools@5e1c41aee6e2
   assetPath: Packages/com.unity.multiplayer.tools
   name: com.unity.multiplayer.tools
   displayName: Multiplayer Tools
@@ -1087,7 +1107,7 @@ m_ResolvedPackages:
     version: 3.2.1
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -1095,7 +1115,7 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -1164,7 +1184,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.widgets
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.multiplayer.widgets@8f9a1d20b6e1
   assetPath: Packages/com.unity.multiplayer.widgets
   name: com.unity.multiplayer.widgets
   displayName: Multiplayer Widgets
@@ -1202,7 +1222,7 @@ m_ResolvedPackages:
   - name: com.unity.transport
     version: 2.4.0
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -1210,7 +1230,7 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -1222,7 +1242,7 @@ m_ResolvedPackages:
   - name: com.unity.services.qos
     version: 1.3.0
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -1230,13 +1250,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.3.3
+    version: 3.4.0
   - name: com.unity.ugui
     version: 2.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.services.wire
-    version: 1.2.7
+    version: 1.3.0
   - name: com.unity.services.deployment
     version: 1.3.0
   - name: com.unity.services.deployment.api
@@ -1287,7 +1307,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.2.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.netcode.gameobjects
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.netcode.gameobjects@f2477a6c90fe
   assetPath: Packages/com.unity.netcode.gameobjects
   name: com.unity.netcode.gameobjects
   displayName: Netcode for GameObjects
@@ -1343,8 +1363,6 @@ m_ResolvedPackages:
     - 2.1.1
     - 2.2.0
     compatible:
-    - 1.10.0
-    - 1.11.0
     - 1.12.0
     - 1.12.1
     - 1.12.2
@@ -1369,7 +1387,7 @@ m_ResolvedPackages:
   - name: com.unity.transport
     version: 2.4.0
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -1377,7 +1395,7 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -1408,7 +1426,7 @@ m_ResolvedPackages:
     revision: ba490651a8c6cf2f98c2bbacef8b24a1170860b3
     path: 
   unityLifecycle:
-    version: 1.10.0
+    version: 1.12.0
     nextVersion: 
     recommendedVersion: 2.2.0
     isDeprecated: 0
@@ -1465,14 +1483,14 @@ m_ResolvedPackages:
   fingerprint: f2477a6c90fe227d487326b01afaa677e0fa8f31
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.10.0
+    minimumPackageVersion: 1.12.0
     minimumUnityVersion: 6000.0.0a1
 - packageId: com.unity.services.multiplayer@1.1.1
   testable: 0
   isDirectDependency: 1
   version: 1.1.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.multiplayer
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.multiplayer@888db1d8279d
   assetPath: Packages/com.unity.services.multiplayer
   name: com.unity.services.multiplayer
   displayName: Multiplayer Services
@@ -1508,14 +1526,11 @@ m_ResolvedPackages:
     - 1.2.0-exp.1
     - 1.2.0-exp.2
     compatible:
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
     - 1.1.0
     - 1.1.1
     - 1.2.0-exp.1
     - 1.2.0-exp.2
-    recommended: 1.0.2
+    recommended: 1.1.1
     deprecated: []
   dependencies:
   - name: com.unity.transport
@@ -1540,7 +1555,7 @@ m_ResolvedPackages:
   - name: com.unity.transport
     version: 2.4.0
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -1548,7 +1563,7 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -1560,7 +1575,7 @@ m_ResolvedPackages:
   - name: com.unity.services.qos
     version: 1.3.0
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -1568,13 +1583,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.3.3
+    version: 3.4.0
   - name: com.unity.ugui
     version: 2.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.services.wire
-    version: 1.2.7
+    version: 1.3.0
   - name: com.unity.services.deployment
     version: 1.3.0
   - name: com.unity.services.deployment.api
@@ -1601,7 +1616,7 @@ m_ResolvedPackages:
     revision: 4105b81935244a5e1b68db96a0d3e985f5d53b5e
     path: 
   unityLifecycle:
-    version: 1.0.0
+    version: 1.1.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1625,14 +1640,14 @@ m_ResolvedPackages:
   fingerprint: 888db1d8279d6e0be7eeff73b98ed475c72a7dd5
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
+    minimumPackageVersion: 1.1.0
     minimumUnityVersion: 2022.3.0a1
 - packageId: com.unity.services.vivox@16.5.4
   testable: 0
   isDirectDependency: 1
   version: 16.5.4
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.vivox
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.vivox@127f02419852
   assetPath: Packages/com.unity.services.vivox
   name: com.unity.services.vivox
   displayName: Vivox
@@ -1719,7 +1734,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.audio
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -1778,7 +1793,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.timeline
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.timeline@c58b4ee65782
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1871,6 +1886,7 @@ m_ResolvedPackages:
     - 1.7.4
     - 1.7.5
     - 1.7.6
+    - 1.7.7
     - 1.8.0
     - 1.8.1
     - 1.8.2
@@ -1963,7 +1979,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ugui
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ugui@22ebcc83720a
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -2045,7 +2061,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: fd5da3b4bec8d043b01c30177bd62059c5fa36d0
+  fingerprint: 22ebcc83720acb62922402e9fdade9fc92b2dfc5
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -2055,7 +2071,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.5
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.visualscripting
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -2170,7 +2186,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.accessibility
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -2237,7 +2253,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.ai
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -2304,7 +2320,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.androidjni
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -2370,7 +2386,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.animation
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -2437,7 +2453,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.assetbundle
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -2504,7 +2520,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.audio
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -2571,7 +2587,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.cloth
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -2642,7 +2658,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.director
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -2717,7 +2733,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.imageconversion
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -2784,7 +2800,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.imgui
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -2851,7 +2867,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.jsonserialize
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -2918,7 +2934,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.particlesystem
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -2985,7 +3001,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.physics
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -3052,7 +3068,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.physics2d
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -3119,7 +3135,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.screencapture
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -3190,7 +3206,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.terrain
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -3257,7 +3273,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.terrainphysics
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -3332,7 +3348,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.tilemap
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -3402,7 +3418,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.ui
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -3469,7 +3485,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.uielements
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -3552,7 +3568,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.umbra
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -3619,7 +3635,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.unityanalytics
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -3693,7 +3709,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.unitywebrequest
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -3760,7 +3776,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -3835,7 +3851,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.unitywebrequestaudio
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -3910,7 +3926,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.unitywebrequesttexture
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -3985,7 +4001,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.unitywebrequestwww
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -4076,7 +4092,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.vehicles
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -4147,7 +4163,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.video
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -4226,7 +4242,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.vr
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -4307,7 +4323,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.wind
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -4374,7 +4390,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.xr
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -4453,7 +4469,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.subsystems
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -4524,7 +4540,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.modules.hierarchycore
+  resolvedPath: C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -4586,12 +4602,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
-- packageId: com.unity.services.core@1.13.0
+- packageId: com.unity.services.core@1.14.0
   testable: 0
   isDirectDependency: 0
-  version: 1.13.0
+  version: 1.14.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.core
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.core@9e81a5e38245
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -4600,7 +4616,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: 
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -4641,7 +4657,6 @@ m_ResolvedPackages:
     - 1.13.0
     - 1.14.0
     compatible:
-    - 1.13.0
     - 1.14.0
     recommended: 1.14.0
     deprecated: []
@@ -4672,16 +4687,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638542134710000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.13/manual/index.html
+  datePublishedTicks: 638684041320270000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.14/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: b39fd5b596524e043554f2114f844632f592406d
+    revision: 64962022211031c9e26ceec024d3587ea8e05a17
     path: 
   unityLifecycle:
-    version: 1.13.0
+    version: 1.14.0
     nextVersion: 
     recommendedVersion: 1.14.0
     isDeprecated: 0
@@ -4691,21 +4706,26 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n\n- Added initialization success and failure
-    events to UnityServices."}'
+  upmReserved: '{"changelog":"### Added\n\n- Added `ServicesInitialization` monobehaviour
+    to manage services in the scene authoring.\n- Added `ServicesBehaviour` abstract
+    monobehaviour as a base for behaviours built on top of services.\n- Added unique
+    identifier for custom service registry creation (`UnityServices.CreateServices`).\n-
+    Added custom services registries dictionary in `UnityServices.Services`.\n- Added
+    `GetIdentifier()` method to `IUnityServices` interface with a default implementation.\n\n###
+    Changed\n\n- Updated the minimum supported Editor version to 2021.3."}'
   assetStore:
     productId: 
-  fingerprint: ebe452e552b92964f64e438bdc2e6a7d850c66cc
+  fingerprint: 9e81a5e382457b799480b311ce51187be99abbbf
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.13.0
-    minimumUnityVersion: 2019.4.0a1
+    minimumPackageVersion: 1.14.0
+    minimumUnityVersion: 2021.3.0a1
 - packageId: com.unity.settings-manager@2.0.1
   testable: 0
   isDirectDependency: 0
   version: 2.0.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.settings-manager
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.settings-manager@56a930affa1e
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -4779,7 +4799,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.2.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.nuget.newtonsoft-json
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
   assetPath: Packages/com.unity.nuget.newtonsoft-json
   name: com.unity.nuget.newtonsoft-json
   displayName: Newtonsoft Json
@@ -4870,7 +4890,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.4.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.transport
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.transport@c6e877f31661
   assetPath: Packages/com.unity.transport
   name: com.unity.transport
   displayName: Unity Transport
@@ -4950,7 +4970,7 @@ m_ResolvedPackages:
     version: 1.3.1
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
@@ -4958,7 +4978,7 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -5020,7 +5040,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.5.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.collections
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -5124,13 +5144,13 @@ m_ResolvedPackages:
     version: 3.0.3
   resolvedDependencies:
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -5190,7 +5210,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.qos
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.qos@f4a3648d24d3
   assetPath: Packages/com.unity.services.qos
   name: com.unity.services.qos
   displayName: QoS
@@ -5233,13 +5253,13 @@ m_ResolvedPackages:
   - name: com.unity.collections
     version: 2.5.1
   - name: com.unity.burst
-    version: 1.8.18
+    version: 1.8.19
   - name: com.unity.mathematics
     version: 1.3.2
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -5249,7 +5269,7 @@ m_ResolvedPackages:
   - name: com.unity.test-framework.performance
     version: 3.0.3
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -5257,7 +5277,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.3.3
+    version: 3.4.0
   - name: com.unity.ugui
     version: 2.0.0
   - name: com.unity.modules.ui
@@ -5303,12 +5323,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.3.0
     minimumUnityVersion: 2020.3.0a1
-- packageId: com.unity.services.wire@1.2.7
+- packageId: com.unity.services.wire@1.3.0
   testable: 0
   isDirectDependency: 0
-  version: 1.2.7
+  version: 1.3.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.wire
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.wire@cc07372d5f37
   assetPath: Packages/com.unity.services.wire
   name: com.unity.services.wire
   displayName: Wire
@@ -5341,10 +5361,8 @@ m_ResolvedPackages:
     - 1.2.8
     - 1.3.0
     compatible:
-    - 1.2.7
-    - 1.2.8
     - 1.3.0
-    recommended: 1.2.8
+    recommended: 1.3.0
     deprecated: []
   dependencies:
   - name: com.unity.services.core
@@ -5355,7 +5373,7 @@ m_ResolvedPackages:
     version: 2.7.4
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -5363,7 +5381,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.services.authentication
-    version: 3.3.3
+    version: 3.4.0
   - name: com.unity.ugui
     version: 2.0.0
   - name: com.unity.modules.ui
@@ -5383,16 +5401,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638615742778570000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.wire@1.2/manual/index.html
+  datePublishedTicks: 638750626978750000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.wire@1.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 9cffdfabe0f434b75347351a78d6824effaf2774
+    revision: 0f0e867228934c25a4a72cdc5b182b484bf13303
     path: 
   unityLifecycle:
-    version: 1.2.7
+    version: 1.3.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -5402,22 +5420,24 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Token retrieval failures can no longer
-    break Wire reconnection attempts\n- Websocket channel will report error when
-    failing to retrieve token","supportedPlatforms":["Android","iOS","Linux","Mac","PC","PS4","PS5","Switch","WebGL"]}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Updated dyncall syntax\n- Websocket
+    jslib will no longer crash player loop on successive connections/disconnections\n-
+    Updated reconnection logic to check if internet is reachable, avoiding unnecessary
+    connection attempts\n\n### Changed\n\n- Updated the minimum supported Editor
+    version to 2021.3."}'
   assetStore:
     productId: 
-  fingerprint: 098672f918fac52d5936f43131548a06ea83b216
+  fingerprint: cc07372d5f37680cdc2e99d03f90a13ffc9093bf
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.2.7
-    minimumUnityVersion: 2020.3.0a1
+    minimumPackageVersion: 1.3.0
+    minimumUnityVersion: 2021.3.0a1
 - packageId: com.unity.services.deployment@1.3.0
   testable: 0
   isDirectDependency: 0
   version: 1.3.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.deployment
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.deployment@0991a9c9ce0d
   assetPath: Packages/com.unity.services.deployment
   name: com.unity.services.deployment
   displayName: Deployment
@@ -5464,7 +5484,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -5516,12 +5536,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.3.0
     minimumUnityVersion: 2021.3.0a1
-- packageId: com.unity.services.authentication@3.3.3
+- packageId: com.unity.services.authentication@3.4.0
   testable: 0
   isDirectDependency: 0
-  version: 3.3.3
+  version: 3.4.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.authentication
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.authentication@f6045b608d0a
   assetPath: Packages/com.unity.services.authentication
   name: com.unity.services.authentication
   displayName: Authentication
@@ -5530,7 +5550,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: library
+  type: 
   description: 'Client SDK offering player identity management for Unity Gaming Services.
 
 
@@ -5565,7 +5585,6 @@ m_ResolvedPackages:
     - 3.3.3
     - 3.4.0
     compatible:
-    - 3.3.3
     - 3.4.0
     recommended: 3.4.0
     deprecated: []
@@ -5573,7 +5592,7 @@ m_ResolvedPackages:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.2.1
   - name: com.unity.modules.unitywebrequest
@@ -5586,7 +5605,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.13.0
+    version: 1.14.0
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -5606,16 +5625,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638542134730000000
-  documentationUrl: 
+  datePublishedTicks: 638684041330010000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.authentication@3.4/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: e86f4e34afa8432d41879e433d2d43de6d1895d9
+    revision: 7c64fb37cabe29e3c36db3668924e045d2e6a6b1
     path: 
   unityLifecycle:
-    version: 3.3.3
+    version: 3.4.0
     nextVersion: 
     recommendedVersion: 3.4.0
     isDeprecated: 0
@@ -5625,22 +5644,22 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed an issue where `IAuthenticationService.SwitchProfile()`
-    was not working properly","gameService":{"configurePath":"Project/Services/Authentication","genericDashboardUrl":"https://cloud.unity3d.com/player-authentication","projectDashboardUrl":"https://cloud.unity3d.com/organizations/{0}/projects/{1}/player-authentication/about","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"},"supportedPlatforms":["Android","iOS","Linux","Mac","PC","WebGL","Windows
-    8 Universal","Windows 10 Universal"]}'
+  upmReserved: '{"changelog":"### Added\n- Added `PlayerAuthentication` component
+    to manage authentication in the scene authoring.\n\n### Changed\n- Updated the
+    minimum supported Editor version to 2021.3.","gameService":{"configurePath":"Project/Services/Authentication","genericDashboardUrl":"https://cloud.unity3d.com/player-authentication","projectDashboardUrl":"https://cloud.unity3d.com/organizations/{0}/projects/{1}/player-authentication/about","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"}}'
   assetStore:
     productId: 
-  fingerprint: 63f0fc6eec07611178890ede964a87ca39c97347
+  fingerprint: f6045b608d0a76ab2748edb777a786b0ca3cd2e0
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 3.3.3
-    minimumUnityVersion: 2020.3.0a1
+    minimumPackageVersion: 3.4.0
+    minimumUnityVersion: 2021.3.0a1
 - packageId: com.unity.nuget.mono-cecil@1.11.4
   testable: 0
   isDirectDependency: 0
   version: 1.11.4
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.nuget.mono-cecil
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -5717,12 +5736,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.11.4
     minimumUnityVersion: 2018.4.0a1
-- packageId: com.unity.burst@1.8.18
+- packageId: com.unity.burst@1.8.19
   testable: 0
   isDirectDependency: 0
-  version: 1.8.18
+  version: 1.8.19
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.burst
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.burst@7a907cf5a459
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -5872,7 +5891,6 @@ m_ResolvedPackages:
     - 1.8.18
     - 1.8.19
     compatible:
-    - 1.8.18
     - 1.8.19
     recommended: 1.8.19
     deprecated: []
@@ -5899,16 +5917,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638622972693870000
+  datePublishedTicks: 638731397665570000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/burst.git
-    revision: 594a8d8794083be96fa510b2deea0954f971ecc9
+    revision: 6498e90e8843e51fdb3a37b709a1f1e4b86d3e57
     path: 
   unityLifecycle:
-    version: 1.8.18
+    version: 1.8.19
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -5918,31 +5936,36 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Added\n- Added the `UNITY_BURST_DISABLE_COMPILATION`
-    environment variable as an alternative to the `--burst-disable-compilation` command-line
-    argument\n\n### Removed\n\n### Changed\n\n### Fixed\n- Static fields used in
-    static constructors were sometimes incorrectly set to read only, despite being
-    written.\n- Fixed a case of the editor getting stuck loading during a domain
-    reload if Burst was set to synchronous compilation\n- Fixed hashing bug that
-    could occur when method signatures differed only by generic parameter count\n-
-    Branches within if (cpufeaturesupported) blocks could cause the transform pass
-    to miss identify which blocks are supporting which features, leading to errors
-    at compile time about intrinsics not being in matching blocks.\n- Fixed ''cannot
-    open input file ucrt.lib'' error when building for Universal Windows Platform
-    and targeting SDK 10.0.26100.0\n\n### Known Issues"}'
+  upmReserved: '{"changelog":"### Changed\n- Source file checksums are now included
+    in pdb debugging files, so that Visual Studio can warn when source files differ
+    from when the pdb was built\n- Added support for `HashCode.Combine`\n\n### Fixed\n-
+    Fixed hash generation error for derived default interface methods\n- Fixed resolution
+    of local variable types in generic default interface methods\n- Fixed crash that
+    could occur when a target method of `BurstCompiler.CompileFunctionPointer` was
+    already decorated with `[MonoPInvokeCallback]`. If this existing attribute existed
+    in a namespace other than `AOT`, Burst''s IL postprocessor would add a second
+    `[MonoPInvokeCallback]`, resulting in a runtime crash on IL2CPP.\n- Fix crash
+    when trying to Burst compile a project without any Bursted code with debug info
+    enabled, when it has already been compiled without debug info before.\n- Fixed
+    `BC1055: Unable to resolve the definition of the method ...` errors when compiling
+    code using `in` method parameters for multiple CPU targets\n- Fixed an issue
+    preventing debugging of managed methods that use direct call, regardless of whether
+    Burst compilation is manually disabled\n- Fixed a rare concurrency issue in the
+    entry point finder.\n\n### Added\n- [Android] Support for 16Kb page sizes\n\n###
+    Removed\n\n### Known Issues"}'
   assetStore:
     productId: 
-  fingerprint: 616862665d8c8ffe643d505aebb5de2ee73b0ab0
+  fingerprint: 7a907cf5a4591e4e25f4203e3be84f240058c34d
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.8.18
+    minimumPackageVersion: 1.8.19
     minimumUnityVersion: 2020.3.0a1
 - packageId: com.unity.mathematics@1.3.2
   testable: 0
   isDirectDependency: 0
   version: 1.3.2
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.mathematics
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -6031,7 +6054,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.2
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.profiling.core
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.profiling.core@aac7b93912bc
   assetPath: Packages/com.unity.profiling.core
   name: com.unity.profiling.core
   displayName: Unity Profiling Core API
@@ -6106,7 +6129,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 5.1.1
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.autodesk.fbx
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.autodesk.fbx@5797ff6b31c7
   assetPath: Packages/com.autodesk.fbx
   name: com.autodesk.fbx
   displayName: Autodesk FBX SDK for Unity
@@ -6203,7 +6226,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.22
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ide.visualstudio
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -6252,7 +6275,7 @@ m_ResolvedPackages:
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -6309,7 +6332,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.31
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ide.rider
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ide.rider@7921be93db40
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -6428,7 +6451,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.editorcoroutines
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.editorcoroutines@7d48783e7b8c
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -6500,12 +6523,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 2018.1.0a1
-- packageId: com.unity.performance.profile-analyzer@1.2.2
+- packageId: com.unity.performance.profile-analyzer@1.2.3
   testable: 0
   isDirectDependency: 0
-  version: 1.2.2
+  version: 1.2.3
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.performance.profile-analyzer
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.performance.profile-analyzer@a68e7bc84997
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -6514,7 +6537,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: "The Profile Analyzer tool supports the standard Unity Profiler. You
     can use it to analyze multiple frames and multiple data sets of the CPU data
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
@@ -6539,7 +6562,6 @@ m_ResolvedPackages:
     - 1.2.2
     - 1.2.3
     compatible:
-    - 1.2.2
     - 1.2.3
     recommended: 1.2.3
     deprecated: []
@@ -6558,16 +6580,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638108624620000000
+  datePublishedTicks: 638699545898200000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
-    revision: 2c63f931588caa60a1fef33b1b250b20d952dc58
+    revision: 835e61d94bd201d0dea5763dff75e86b6b61de29
     path: 
   unityLifecycle:
-    version: 1.2.2
+    version: 1.2.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -6577,21 +6599,21 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n* Fixed exception thrown when removing
-    marker."}'
+  upmReserved: '{"changelog":"### Fixed\n\n* Fixed minimum supported version in documentation.\n*
+    Fixed PROFB-199; Unchecking ''Hide Removed Markers'' doesn''t work."}'
   assetStore:
     productId: 
-  fingerprint: fe7acfd2717a98ded6ddc33be6b2ebe4459a2add
+  fingerprint: a68e7bc849973d943853204178d08a2bc7656ffe
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.2.2
+    minimumPackageVersion: 1.2.3
     minimumUnityVersion: 2020.3.0a1
-- packageId: com.unity.test-framework@1.4.5
+- packageId: com.unity.test-framework@1.4.6
   testable: 0
   isDirectDependency: 0
-  version: 1.4.5
+  version: 1.4.6
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.test-framework
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.test-framework@5ac417e07314
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -6600,7 +6622,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: assets
+  type: 
   description: Test framework for running Edit mode and Play mode tests in Unity.
   errors: []
   versions:
@@ -6660,7 +6682,6 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
-    - 1.4.5
     - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
@@ -6697,16 +6718,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638575054880000000
+  datePublishedTicks: 638743524358990000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: e50747c90fb18ab9f4f350b60d0fcdcae19bdebc
+    revision: 9c6028f63a9b875e714b65de151b74e170152d49
     path: 
   unityLifecycle:
-    version: 1.4.5
+    version: 1.4.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -6716,47 +6737,35 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"- Fixed an issue where batchmode test runs would never
-    finish if a test yielded WaitForEndOfFrame (DSTR-1009).\n- Fixed an issue where
-    the location prompt was required when using the Install all tests in ''build''
-    folder option during test builds.\n- Canceling a PlayMode test run now correctly
-    restores the scene setup, instead of leaving the editor in the test scene.\n-
-    Fixed an issue where UnitySetUp did not fail when nested coroutines threw an
-    exception (DSTR-1007).\n- When selecting multiple tests and running them, the
-    test runner now correctly updates the details of the first selected test (UTF-602).\n-
-    The interaction mode and application idle time settings is now being changes
-    when running tests, resulting in faster test runs if not already in use (applies
-    to 2020.3 and later) (DSTR-690).\n- Fixed an issue where some NUnit attributes
-    caused errors and stopped async test runs (DSTR-1040).\n- Added support for the
-    MaxTime attribute on async and UnityTest methods (DSTR-1040).\n- Fixed a memory
-    leak issue where a large number of domain reloads within the same test could
-    crash the editor (DSTR-1023).\n- Changed to use a progress bar inside the test
-    runner window when running tests. This ensures that the progress bar is not fighting
-    to display when e.g. compiling scripts and also makes it easier to cancel a run.
-    This progress bar is displayed for all types of runs (EditMode, PlayMode and
-    Player). (UTF-596).\n- Fixed an issue where ignored tests with an attributes
-    did not display the ignore reason in the test runner UI.\n- Having multiple tests
-    with the same unique id no longer gives a error with ''An item with the same
-    key has already been added'', but instead logs an warning about the duplicate
-    id.\n- The result icons for test suites should no longer flicker when running
-    tests.\n- Ensured that test results ignored in the editor but run on a player
-    are not overwritten with ignore status when shown in the UI (DSTR-1042).\n- Fixed
-    an issue where the RunStarted event was not invoked correctly during a test run
-    (DSTR-1046).\n- Fixed an issue where TestStarted and TestFinished events were
-    repeated for ignored test fixtures after a domain reload (DSTR-986)."}'
+  upmReserved: '{"changelog":"- Fixed an issue where the architecture flag would
+    not be parsed for the StandaloneOSX platform.\n- Fixed an issue where the test
+    results ui and progress bar would not update before a user input, such as mouse
+    movement, was detected (UTF-609).\n- Fixed an issue where root of the test tree
+    was marked as NotRun, when all the tests were run and at least one test is ignore.\n-
+    Ensure that an error is raised and the test run is stopped if a playmode test
+    method exits playmode (DSTR-1091). \n- Async editmode tests are no longer throw
+    error when yielding a different value than null (DSTR-1066)\n- Fixed an issue
+    where the \"C# Test Script\" button was always disabled in One Column view in
+    Project tab. (DSTR-1083)\n- Async and UnityTest can now use ParametrizedIgnore
+    attribute. (DSTR-1068)\n- Corrected Timeout to only apply to the test method
+    and not the teardown methods, ensuring that TearDown is always run if a test
+    case times out (DSTR-1077).\n- Added a queue size indicator in the player side
+    test result ui. This can be used to track the progress of sending back result
+    data to the editor.\n- Parent node of the test tree is now updated after all
+    children finish running and have a result."}'
   assetStore:
     productId: 
-  fingerprint: 0a21eb82d95cd331643a1e0ce4e8e9a5f18954c8
+  fingerprint: 5ac417e07314c8f6afba8109738c32b82d391e68
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.4.5
-    minimumUnityVersion: 2019.4.0a10
+    minimumPackageVersion: 1.4.6
+    minimumUnityVersion: 2019.4.1f1
 - packageId: com.unity.testtools.codecoverage@1.2.6
   testable: 0
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.testtools.codecoverage
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -6816,7 +6825,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -6879,7 +6888,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.deployment.api
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.services.deployment.api@e87c554599f0
   assetPath: Packages/com.unity.services.deployment.api
   name: com.unity.services.deployment.api
   displayName: Deployment API
@@ -6950,7 +6959,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.3
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.test-framework.performance
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -7027,7 +7036,7 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.4.5
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
@@ -7085,7 +7094,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 1
-  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ext.nunit
+  resolvedPath: C:\Users\sytwj\Documents\GitHub\Project\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -7159,4 +7168,4 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.5
     minimumUnityVersion: 2019.4.0a1
-m_BuiltInPackagesHash: 6f2402311d0e4d4e35607ca968b42a9258561b2a
+m_BuiltInPackagesHash: c519722f99d4c536bb3d72247b15611d287a1c0b
